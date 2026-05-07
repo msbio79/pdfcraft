@@ -41,7 +41,7 @@ jobs:
       - name: Build Tauri app
         env:
           TAURI_ENV: "true"
-        run: npm run build:tauri
+        run: npx tauri build
 
       - name: Validate Tauri action wiring
         uses: tauri-apps/tauri-action@v0
